@@ -5,8 +5,8 @@
  */
 package fr.insa.cours.projet_treilli.Terrain;
 
-import fr.insa.cours.projet_treilli.*;
-import java.awt.Color;
+//import fr.insa.cours.projet_treilli.*;
+import fr.insa.cours.projet_treilli.figure.Point;
 
 /**
  *

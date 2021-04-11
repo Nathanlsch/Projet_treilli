@@ -5,7 +5,7 @@
  */
 package fr.insa.cours.projet_treilli.Terrain;
 
-import fr.insa.cours.projet_treilli.*;
+//import fr.insa.cours.projet_treilli.*;
 import java.util.ArrayList;
 import java.util.List;
 
