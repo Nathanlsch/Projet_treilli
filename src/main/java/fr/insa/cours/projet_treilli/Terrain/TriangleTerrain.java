@@ -20,7 +20,7 @@ public class TriangleTerrain {
     private SegmentTerrain Segment1;
     private SegmentTerrain Segment2;
     private SegmentTerrain Segment3;
-    private int idSegment;
+    private int idTriangle;
  
     
     public TriangleTerrain (Point p1,Point p2, Point p3){
@@ -56,8 +56,13 @@ public class TriangleTerrain {
         return Segment3;
     }
 
-    public int getIdSegment() {
-        return idSegment;
+    public int getIdTriangle() {
+        return idTriangle;
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle;("+Point1.getPx() + ";" + Point1.getPy() + ");(" +Point2.getPx() + ";" + Point2.getPy() + ");(" + +Point3.getPx() + ";" + Point3.getPy() + ")";
     }
 
    
