@@ -5,10 +5,23 @@
  */
 package fr.insa.cours.projet_treilli.Terrain;
 
+import fr.insa.cours.projet_treilli.*;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
- * @author Steven
+ * @author lasch
  */
-public class Terrain {
+public abstract class Terrain {
+    
+    private double minX;
+    private double maxX;
+    private double minY;
+    private double maxY; 
+    
+    private List<TriangleTerrain> contientTriangle;
+    
+    
     
 }
