@@ -29,6 +29,10 @@ public class Point  {
     public double getPx() {
         return this.px;
     }
+    
+     public double getPy() {
+        return this.py;
+    }
 
     public void setPx(double px) {
         this.px = px;

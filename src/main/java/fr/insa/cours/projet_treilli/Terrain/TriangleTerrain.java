@@ -64,13 +64,7 @@ public class TriangleTerrain {
     public String toString() {
         return "Triangle;("+Point1.getPx() + ";" + Point1.getPy() + ");(" +Point2.getPx() + ";" + Point2.getPy() + ");(" + +Point3.getPx() + ";" + Point3.getPy() + ")";
     }
-
    
-    
-    
-    
-    
-    
     
 }
 

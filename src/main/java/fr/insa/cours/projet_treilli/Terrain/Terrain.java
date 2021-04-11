@@ -21,6 +21,11 @@ public abstract class Terrain {
     private double maxY; 
     
     private List<TriangleTerrain> contientTriangle;
+
+    @Override
+    public String toString() {
+        return "ZoneConstructible;"+ minX + ";" + maxX + ";" + minY + ";" + maxY;
+    }
     
     
     
