@@ -14,6 +14,6 @@ public class Barre {
     
     private String id;
     private Noeud ndepart;
-    private Noeud ndepart;     
+    private Noeud nfin;     
     
 }
