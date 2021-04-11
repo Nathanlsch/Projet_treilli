@@ -14,10 +14,10 @@ import java.util.List;
  */
 public abstract class Terrain {
     
-    private float MinX;
-    private float MaxX;
-    private float MinY;
-    private float MaxY; 
+    private double minX;
+    private double maxX;
+    private double minY;
+    private double maxY; 
     
     private List<TriangleTerrain> contientTriangle;
     
