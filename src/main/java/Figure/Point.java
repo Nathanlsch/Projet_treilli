@@ -11,24 +11,20 @@ import java.awt.Color;
  *
  * @author francois
  */
-public class Point extends FigureSimple {
+public class Point  {
 
     private double px;
     private double py;
 
     public Point() {
-        this(0.0, 0.0,Color.black);
+        this.px=0;
+        this.py=0;
     }
 
     public Point(double px, double py) {
-      this(px,py,Color.black);
+        this.px=px;
+        this.py=py;
      }
-
-    public Point(double px, double py, Color c) {
-        super(c);
-        this.px = px;
-        this.py = py;
-    }
 
     public double getPx() {
         return this.px;
@@ -53,8 +49,7 @@ public class Point extends FigureSimple {
     }
 
     public String toString() {
-        return "{Point ; abs : " + this.px + " ; ord : " + this.py + "}" +
-                "couleur : " + this.getCouleurContenu();
+        return "{Point ; abs : " + this.px + " ; ord : " + this.py + "}" ;
     }
 
     public static void testDistance() {
@@ -70,7 +65,6 @@ public class Point extends FigureSimple {
         System.out.println("milieu : " + mi);
     }
 
-    @Override
     public double minX() {
         return this.px;
     }
@@ -80,7 +74,7 @@ public class Point extends FigureSimple {
         Point p2,p3;
         p1 = new Point();
         p2 = new Point(1, 2);
-        p3 = new Point(0, 0, Color.red);
+        p3 = new Point(0, 0);
         System.out.println("p1 = " + p1);
         System.out.println("p2 = " + p2);
         System.out.println("p3 = " + p3);
