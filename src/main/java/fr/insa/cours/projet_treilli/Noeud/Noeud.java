@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.insa.cours.projet_treilli;
+package fr.insa.cours.projet_treilli.Noeud;
 
 /**
  *
- * @author lasch
+ * @author Steven
  */
-public class point {
+public class Noeud {
     
 }

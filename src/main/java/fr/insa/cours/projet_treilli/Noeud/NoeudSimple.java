@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.insa.cours.projet_treilli;
+package fr.insa.cours.projet_treilli.Noeud;
 
 /**
  *
  * @author Steven
  */
-public class Noeud {
-
-    private String id;
-    private double px;
-    private double py; 
+public class NoeudSimple {
     
 }
