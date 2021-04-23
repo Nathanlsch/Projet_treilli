@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author lasch
  */
-public abstract class Terrain {
+public class Terrain {
     
     private double minX;
     private double maxX;
