@@ -5,7 +5,7 @@
  */
 package main;
 
-import fr.insa.cours.projet_treilli.Terrain.Terrain;
+import static fr.insa.cours.projet_treilli.Terrain.Terrain.DemandeTerrain;
 import recup.Lire;
 
 /**
@@ -17,7 +17,7 @@ import recup.Lire;
 public class main {
     
     
-  public void menuTexte() {
+  public static void menuTexte() {
         int rep = -1;
         while (rep != 0) {
             System.out.println("1) créer un terrain");
@@ -28,11 +28,11 @@ public class main {
             System.out.println("votre choix : ");
             rep = Lire.i();
             if (rep == 1) {
-               Terrain tr = new Terrain.TEST();
-               
-               
-                
+              
+                DemandeTerrain();
+                 
             } else if (rep == 2) {
+                
                 
                 
             } else if (rep == 3) {
@@ -47,6 +47,7 @@ public class main {
 
     
     public static void main(String[] args) {
-        
+        menuTexte();
     }
+}
 
