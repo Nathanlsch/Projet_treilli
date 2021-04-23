@@ -36,9 +36,8 @@ public class Terrain {
     }
     
     
-    public static Terrain CreationTerrain(){
+    public static Terrain TEST(){
         
-        Terrain Terrain;
         System.out.println("Donner l'abscisse minimum");
            double minX = Lire.d();
            System.out.println("Donner l'abscisse maximum");
