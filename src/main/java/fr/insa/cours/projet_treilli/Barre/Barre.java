@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package fr.insa.cours.projet_treilli.Barre;
-package fr.insa.cours.projet_treilli.Noeud;
+
+import fr.insa.cours.projet_treilli.noeud.Noeud;
 
 /**
  *
@@ -14,20 +15,38 @@ public class Barre {
     
     private int id;
     private Noeud ndepart;
-    private Noeud nfin; 
+    private Noeud nfin;
+    private TypeDeBarre typeDeBarre;
 
-
-    public Barre(int id) {
+    public Barre(int id, Noeud ndepart, Noeud nfin, TypeDeBarre typeDeBarre) {
         this.id = id;
+        this.nfin = nfin;
+        this.typeDeBarre = typeDeBarre;
+        
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public Noeud getNdepart() {
+        return ndepart;
     }
+
+    public Noeud getNfin() {
+        return nfin;
+    }
+
+    public TypeDeBarre getTypeDeBarre() {
+        return typeDeBarre;
+    }
+    
+    
+        @Override
+    public String toString() {
+        return "Barre;" + this.getId() + ";" + this.getNdepart() + ";" + this.getNdepart() + ";" + this.getTypeDeBarre() + ";" ;
+    }
+    
    
     
 }

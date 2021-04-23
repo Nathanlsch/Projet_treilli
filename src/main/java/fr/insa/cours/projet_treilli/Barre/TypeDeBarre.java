@@ -11,11 +11,21 @@ package fr.insa.cours.projet_treilli.Barre;
  */
 public class TypeDeBarre
 {
-    
+    private int id;
     private double coutAuMetre;
     private double longueurMin;
     private double longueurMax;
     private double resistanceMaxCompression;
+
+
+    public TypeDeBarre(int id, double coutAuMetre, double longueurMin, double longueurMax, double resistanceMaxCompression) {
+        this.id = id;
+        this.coutAuMetre = coutAuMetre;
+        this.longueurMin = longueurMin;
+        this.longueurMax = longueurMax;
+        this.resistanceMaxCompression = resistanceMaxCompression;
+    }
+    
     
     public double getcoutAuMetre()
     {
