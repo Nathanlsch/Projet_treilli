@@ -5,10 +5,17 @@
  */
 package fr.insa.cours.projet_treilli.noeud;
 
+import fr.insa.cours.projet_treilli.Terrain.TriangleTerrain;
+
 /**
  *
  * @author Steven
  */
 public class AppuiEncastre extends Appui {
+
+    public AppuiEncastre(int id, TriangleTerrain triangleTerrain, int p1, double posSurSegment) {
+        super(id, triangleTerrain, p1, posSurSegment);
+    }
+    
     
 }
