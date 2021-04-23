@@ -5,11 +5,24 @@
  */
 package fr.insa.cours.projet_treilli.noeud;
 
+import fr.insa.cours.projet_treilli.Terrain.TriangleTerrain;
+
 /**
  *
  * @author Steven
  */
-public class AppuiSimple extends Noeud {
+
+public class AppuiSimple extends Appui {
+
+    public AppuiSimple(int id, TriangleTerrain triangleTerrain, int p1, double posSurSegment) {
+        super(id, triangleTerrain, p1, posSurSegment);
+    }
     
-    private double posSurSegment;
+        @Override
+    public String toString() {
+        return "AppuiSimple;" + this.getId() + ";" + this.getTriangleTerrain().getIdTriangle() + ";" + this.getP1() + ";" + this.getPosSurSegment() + ";" ;
+    }
+    
+
+
 }
