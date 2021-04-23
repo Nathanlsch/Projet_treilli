@@ -8,6 +8,7 @@ package fr.insa.cours.projet_treilli.Terrain;
 //import fr.insa.cours.projet_treilli.*;
 import java.util.ArrayList;
 import java.util.List;
+import recup.Lire;
 
 /**
  *
@@ -26,7 +27,30 @@ public class Terrain {
     public String toString() {
         return "ZoneConstructible;"+ minX + ";" + maxX + ";" + minY + ";" + maxY;
     }
+
+    public Terrain(double minX,double maxX,double minY,double maxY) {
+        this.minX = minX;
+        this.maxX = maxX;
+        this.minY = minY;
+        this.maxY = maxY;
+    }
     
     
+    public static Terrain CreationTerrain(){
+        
+        Terrain Terrain;
+        System.out.println("Donner l'abscisse minimum");
+           double minX = Lire.d();
+           System.out.println("Donner l'abscisse maximum");
+           double maxX = Lire.d();
+           System.out.println("Donner l'ordonée minimum");
+           double minY = Lire.d();
+           System.out.println("Donner l'ordonnée maximum");
+           double maxY = Lire.d();
+           
+           return new Terrain(minX, maxX, minY, maxY); 
+           
+    }
+       
     
 }
