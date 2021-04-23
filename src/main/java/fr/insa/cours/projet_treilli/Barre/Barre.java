@@ -12,8 +12,25 @@ package fr.insa.cours.projet_treilli.Noeud;
  */
 public class Barre {
     
-    private String id;
+    private int id;
     private Noeud ndepart;
-    private Noeud nfin;     
+    private Noeud nfin; 
+
+
+    public Barre(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    public 
+
+    
     
 }
