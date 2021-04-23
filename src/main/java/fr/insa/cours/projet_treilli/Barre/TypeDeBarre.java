@@ -15,58 +15,62 @@ public class TypeDeBarre
     private double coutAuMetre;
     private double longueurMin;
     private double longueurMax;
+    private double resistanceMaxTension;
     private double resistanceMaxCompression;
 
 
-    public TypeDeBarre(int id, double coutAuMetre, double longueurMin, double longueurMax, double resistanceMaxCompression) {
+    public TypeDeBarre(int id, double coutAuMetre, double longueurMin, double longueurMax, double resistanceMaxTension, double resistanceMaxCompression) {
         this.id = id;
         this.coutAuMetre = coutAuMetre;
         this.longueurMin = longueurMin;
         this.longueurMax = longueurMax;
+        this.resistanceMaxTension = resistanceMaxTension;
         this.resistanceMaxCompression = resistanceMaxCompression;
+    }
+
+    public int getId() {
+        return id;
     }
     
     
-    public double getcoutAuMetre()
+    public double getCoutAuMetre()
     {
         return this.coutAuMetre;
     }
     
-    public double getlongueurMin()
+    public double getLongueurMin()
     {
         return this.longueurMin;
     }
     
-    public double getlongueurMax()
+    public double getLongueurMax()
     {
         return this.longueurMax;
     }
+
+    public double getResistanceMaxTension() {
+        return resistanceMaxTension;
+    }
     
-    public double getresistanceMaxCompression()
+    
+    public double getResistanceMaxCompression()
     {
         return this.resistanceMaxCompression;
     }
     
-    
-    
-    public void setcoutAuMetre(double coutAuMetre)
-    {
-        this.coutAuMetre = coutAuMetre;
-    }
-    
-    public void setlongueurMin(double longueurMin)
-    {
-        this.longueurMin = longueurMin;
-    }
-    
-    public void setlongueurMax(double longueurMax)
-    {
-        this.longueurMax = longueurMax;
-    }
-    
-    public void resistanceMaxCompression(double resistanceMaxCompression)
+  
+    public void ResistanceMaxCompression(double resistanceMaxCompression)
     {
         this.resistanceMaxCompression = resistanceMaxCompression;
     } 
+
+    @Override
+    public String toString() {
+        return "TypeDeBarre;" + this.getId() + ";" + this.getLongueurMin() +";"+ this.getResistanceMaxTension()+";"+ this.getResistanceMaxCompression();
+    }
+    
+    
+  
+    
     
 }

@@ -41,7 +41,6 @@ public class Barre {
         return typeDeBarre;
     }
     
-    
         @Override
     public String toString() {
         return "Barre;" + this.getId() + ";" + this.getNdepart() + ";" + this.getNdepart() + ";" + this.getTypeDeBarre() + ";" ;
