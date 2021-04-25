@@ -7,6 +7,7 @@ package fr.insa.cours.projet_treilli.Terrain;
 
 //import fr.insa.cours.projet_treilli.*;
 import fr.insa.cours.projet_treilli.figure.Point;
+import recup.Lire;
 
 /**
  *
@@ -65,6 +66,20 @@ public class TriangleTerrain {
         return "Triangle;("+Point1.getPx() + ";" + Point1.getPy() + ");(" +Point2.getPx() + ";" + Point2.getPy() + ");(" + +Point3.getPx() + ";" + Point3.getPy() + ")";
     }
    
-    
+   public static void DemandeTriangle(){
+        
+        System.out.println("Créer le point 1");
+           Point p1 = Point.DemandePoint();
+           System.out.println("Créer le point 2");
+           Point p2 = Point.DemandePoint();
+           System.out.println("Créer le point 3");
+           Point p3 = Point.DemandePoint();
+           System.out.println("Donner id");
+           TriangleTerrain triangle = new TriangleTerrain(p1,p2,p3);
+           triangle.idTriangle = Lire.s();
+           
+           System.out.println(triangle.toString());
+    } 
+   
 }
 

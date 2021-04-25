@@ -6,6 +6,7 @@
 
 
 import static fr.insa.cours.projet_treilli.Terrain.Terrain.DemandeTerrain;
+import static fr.insa.cours.projet_treilli.Terrain.TriangleTerrain.DemandeTriangle;
 import recup.Lire;
 
 /**
@@ -33,7 +34,7 @@ public class menu {
                  
             } else if (rep == 2) {
                 
-                
+                DemandeTriangle();
                 
             } else if (rep == 3) {
                 

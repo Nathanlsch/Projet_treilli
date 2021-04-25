@@ -6,6 +6,7 @@
 package fr.insa.cours.projet_treilli.figure;
 
 import java.awt.Color;
+import recup.Lire;
 
 /**
  *
@@ -88,5 +89,15 @@ public class Point  {
 //        testDistance();
 testConstructeur();
     }
+public static Point DemandePoint(){
+    
+    System.out.println("Donner l'abscisse");
+    double abs = Lire.d();
+    System.out.println("Donner l'ordonée");
+    double ord = Lire.d();
+    Point point = new Point(abs,ord);
+    return point;
+  
+}
 
 }
