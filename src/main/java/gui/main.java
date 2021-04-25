@@ -20,7 +20,7 @@ public class main extends Application {
 
     @Override
     public void start(Stage stage) {
-        Scene sc = new Scene(new Label("coucou"));
+        Scene sc = new Scene(new mainPane());
         stage.setScene(sc);
           stage.show();
     }
