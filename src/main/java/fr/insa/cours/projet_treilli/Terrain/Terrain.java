@@ -36,7 +36,7 @@ public class Terrain {
     }
     
     
-    public static void DemandeTerrain(){
+    public static Terrain DemandeTerrain(){
         
         System.out.println("Donner l'abscisse minimum");
            double minX = Lire.d();
@@ -49,6 +49,8 @@ public class Terrain {
            
            Terrain terrain = new Terrain(minX,maxX,minY,maxY);
            System.out.println(terrain.toString());
+           
+          return terrain;
            
     }
        

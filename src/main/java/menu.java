@@ -5,8 +5,8 @@
  */
 
 
-import static fr.insa.cours.projet_treilli.Terrain.Terrain.DemandeTerrain;
-import static fr.insa.cours.projet_treilli.Terrain.TriangleTerrain.DemandeTriangle;
+import fr.insa.cours.projet_treilli.Terrain.Terrain;
+import fr.insa.cours.projet_treilli.Terrain.TriangleTerrain;
 import recup.Lire;
 
 /**
@@ -30,11 +30,11 @@ public class menu {
             rep = Lire.i();
             if (rep == 1) {
               
-                DemandeTerrain();
+                Terrain terrain = Terrain.DemandeTerrain();
                  
             } else if (rep == 2) {
                 
-                DemandeTriangle();
+                TriangleTerrain triangle = TriangleTerrain.DemandeTriangle();
                 
             } else if (rep == 3) {
                 

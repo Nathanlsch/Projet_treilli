@@ -66,7 +66,7 @@ public class TriangleTerrain {
         return "Triangle;("+Point1.getPx() + ";" + Point1.getPy() + ");(" +Point2.getPx() + ";" + Point2.getPy() + ");(" + +Point3.getPx() + ";" + Point3.getPy() + ")";
     }
    
-   public static void DemandeTriangle(){
+   public static TriangleTerrain DemandeTriangle(){
         
         System.out.println("Créer le point 1");
            Point p1 = Point.DemandePoint();
@@ -79,6 +79,8 @@ public class TriangleTerrain {
            triangle.idTriangle = Lire.s();
            
            System.out.println(triangle.toString());
+           return triangle;
+           
     } 
    
 }
