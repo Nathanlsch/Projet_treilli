@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui;
+
 
 import static fr.insa.cours.projet_treilli.Terrain.Terrain.DemandeTerrain;
 import recup.Lire;
