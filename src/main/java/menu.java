@@ -35,6 +35,7 @@ public class menu {
             } else if (rep == 2) {
                 
                 TriangleTerrain triangle = TriangleTerrain.DemandeTriangle();
+                //add(triangle);
                 
             } else if (rep == 3) {
                 
