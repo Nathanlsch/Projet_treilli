@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main;
+package gui;
 
 import static fr.insa.cours.projet_treilli.Terrain.Terrain.DemandeTerrain;
 import recup.Lire;
@@ -14,7 +14,7 @@ import recup.Lire;
  */
 
 
-public class main {
+public class menu {
     
     
   public static void menuTexte() {

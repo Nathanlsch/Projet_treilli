@@ -1,6 +1,5 @@
 package recup;
 
-import main.*;
 import java.io.*;
 
 /**
