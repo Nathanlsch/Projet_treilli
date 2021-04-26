@@ -5,6 +5,8 @@
  */
 package gui;
 
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
 import javafx.scene.control.RadioButton;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -22,6 +24,7 @@ public class mainPane extends BorderPane {
     private RadioButton rbtest4;
     private RadioButton rbtest5;
     private RadioButton rbtest6;
+    private Menu menu1;
 
 public mainPane(){ 
     
@@ -31,12 +34,15 @@ public mainPane(){
     this.rbtest4 =new RadioButton("test4");
     this.rbtest5 =new RadioButton("test5");
     this.rbtest6 =new RadioButton("test6");
+    this.menu1 = new Menu("File");
     
+    MenuBar menuBar = new MenuBar();
+    menuBar.getMenus().add(menu1);
     
     VBox gauche = new VBox(this.rbtest1,this.rbtest2);
     this.setLeft(gauche);
-    VBox droite = new VBox(this.rbtest3);
-    this.setRight(droite);
+    //VBox droite = new VBox(this.rbtest3);
+    //this.setRight(test);
     HBox haut = new HBox(this.rbtest4,this.rbtest5,this.rbtest6);
     this.setTop(haut);
     

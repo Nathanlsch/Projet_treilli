@@ -9,24 +9,30 @@ package gui;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 /**
  *
  * @author lasch
  */
 public class main extends Application {
-
-    @Override
-    public void start(Stage stage) {
-        Scene sc = new Scene(new mainPane());
-        stage.setScene(sc);
-          stage.show();
-    }
-
+    
     public static void main(String[] args) {
         launch();
     }
+    
+
+    @Override
+    public void start(Stage stage) {
+        Scene sc = new Scene(new test());
+        stage.setScene(sc);
+          stage.show();
+    }
+    
+
+    
 
 }
