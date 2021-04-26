@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package fr.insa.cours.projet_treilli.Barre;
-
 import fr.insa.cours.projet_treilli.noeud.Noeud;
 
 /**

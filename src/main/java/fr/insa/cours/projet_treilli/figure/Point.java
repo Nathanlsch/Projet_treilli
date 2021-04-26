@@ -52,6 +52,37 @@ public class Point  {
         res.py = (this.py + p2.py) / 2;
         return res;
     }
+    
+        //Calculer le produit scalaire entre les vecteurs formés par a(PNoeud,P1), b(PNoeud,P2)
+        public double ProduitScalaire (Point P1, Point P2) {
+            //Calculer les coordonnées du vecteur a(PNoeud,P1)
+            double ax = this.getPx()- P1.getPx();
+            double ay = this.getPy()- P1.getPy();
+            
+            //Calculer les coordonnées du vecteur b(PNoeud,P2)
+            double bx = this.getPx()- P2.getPx();
+            double by = this.getPy()- P2.getPy();
+            
+            System.out.println(ax*by + ay*bx);
+            //Calculer le produit scalaire a.b
+            return ax*bx + ay*by;
+            
+        }
+        
+        //Détermine l'angle entre les vecteurs a(Noeud,P1) et b(Noeud,P2)
+        public double getAngle(Point Point1, Point Point2) {
+            
+        double A = this.distance(Point1);
+        double B = this.distance(Point2);
+        
+        System.out.println(A);
+        System.out.println(B);
+        
+        
+        return Math.acos(this.ProduitScalaire(Point1, Point2)/(A*B));
+        
+    }
+        
 
     public String toString() {
         return "{Point ; abs : " + this.px + " ; ord : " + this.py + "}" ;

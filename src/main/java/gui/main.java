@@ -20,9 +20,12 @@ import javafx.stage.Stage;
  */
 public class main extends Application {
     
+    
     public static void main(String[] args) {
         launch();
+       
     }
+    
     
 
     @Override

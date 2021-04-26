@@ -10,15 +10,16 @@ package fr.insa.cours.projet_treilli.noeud;
  * @author Steven
  */
 public class NoeudSimple extends Noeud {
-    
-    private double px;
-    private double py; 
+
+      private double px;
+      private double py; 
      
     public NoeudSimple (int id, double px, double py) {
     super(id);
     this.px = px;
     this.py = py;
-}
+    }
+    
     public double getPx() {
         return px;
     }

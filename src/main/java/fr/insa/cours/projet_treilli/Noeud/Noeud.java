@@ -5,14 +5,18 @@
  */
 package fr.insa.cours.projet_treilli.noeud;
 
+import fr.insa.cours.projet_treilli.Terrain.TriangleTerrain;
+import fr.insa.cours.projet_treilli.figure.Point;
+
 /**
  *
  * @author Steven
  */
-public abstract class Noeud {
+public class Noeud {
     
-    private int id;
-
+  private int id;
+  private double px;
+  
     public Noeud(int id) {
         this.id = id;
     }
@@ -24,5 +28,6 @@ public abstract class Noeud {
     public void setId(int id) {
         this.id = id;
     }
+    
 
 }
