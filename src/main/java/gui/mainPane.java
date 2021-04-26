@@ -5,9 +5,12 @@
  */
 package gui;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.control.Button;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
-import javafx.scene.control.RadioButton;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -18,35 +21,71 @@ import javafx.scene.layout.VBox;
  */
 public class mainPane extends BorderPane {
     
-    private RadioButton rbtest1;
-    private RadioButton rbtest2;
-    private RadioButton rbtest3;
-    private RadioButton rbtest4;
-    private RadioButton rbtest5;
-    private RadioButton rbtest6;
-    private Menu menu1;
-
+    //Variable menu 
+    private Button boutton1;
+    private Menu menu;
+    private MenuBar menuBar;
+    private Menu subMenu;
+    private MenuItem menuItem1;
+    private MenuItem menuItem2;
+    //Fin variable menu 
+    
+    //Variable Dessin
+    private DessinCanvas cvtest;
+    
+    //Variable Bouton
+    private Button test;
+    
 public mainPane(){ 
+   
+    //Création bouton
+   test = new Button();
     
-    this.rbtest1 =new RadioButton("test1");
-    this.rbtest2 =new RadioButton("test2");
-    this.rbtest3 =new RadioButton("test3");
-    this.rbtest4 =new RadioButton("test4");
-    this.rbtest5 =new RadioButton("test5");
-    this.rbtest6 =new RadioButton("test6");
-    this.menu1 = new Menu("File");
+   //Création du menu 
+   menuBar = new MenuBar();
+   menu = new Menu("Menu 1");
+   boutton1 = new Button("Boutton1");
+   subMenu = new Menu("Menu1.1");
+   menuItem1 = new MenuItem("Item 1.1.1");
+   subMenu.getItems().add(menuItem1);
+   menu.getItems().add(subMenu);
+   
+   menuItem2 = new MenuItem("Item 2");
+   menu.getItems().add(menuItem2);
+   
+   menuBar.getMenus().add(menu);
+   
+   HBox Menu = new HBox(menuBar);
+   this.setTop(Menu);
     
-    MenuBar menuBar = new MenuBar();
-    menuBar.getMenus().add(menu1);
+   //Fin du menu
+   
+   //Boite gauche
+   VBox gauche = new VBox(test);
+   gauche.setMaxSize(100, 200);
+   gauche.setMinSize(100, 200);
+   this.setLeft(gauche);
+   //Bouton associé
+   test = new Bouton("test",100,25);
+   
+   this.test.setOnAction(new EventHandler<ActionEvent>(){
+       @Override
+       public void handle(ActionEvent t){
+           System.out.println("test");    
+       }
+       });
+           
+
+   
+   //Debut dessin 
+    this.cvtest = new DessinCanvas();
+    this.setCenter(this.cvtest);
     
-    VBox gauche = new VBox(this.rbtest1,this.rbtest2);
-    this.setLeft(gauche);
-    //VBox droite = new VBox(this.rbtest3);
-    //this.setRight(test);
-    HBox haut = new HBox(this.rbtest4,this.rbtest5,this.rbtest6);
-    this.setTop(haut);
-    
-    
+    this.cvtest.setOnMouseClicked((t) -> {
+       System.out.println("click");
+    });
+   
+  
 }  
     
 }

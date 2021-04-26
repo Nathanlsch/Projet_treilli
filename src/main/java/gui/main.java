@@ -27,7 +27,7 @@ public class main extends Application {
 
     @Override
     public void start(Stage stage) {
-        Scene sc = new Scene(new test());
+        Scene sc = new Scene(new mainPane(),800,600);
         stage.setScene(sc);
           stage.show();
     }
