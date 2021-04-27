@@ -82,7 +82,34 @@ public class Point  {
         return Math.acos(this.ProduitScalaire(Point1, Point2)/(A*B));
         
     }
+        public double signe (Point P1, Point P2) {
+            double pNx = this.getPx();
+            double pNy = this.getPy();
+            
+            double p1x = P1.getPx();
+            double p1y = P1.getPy();
+            
+            double p2x = P2.getPx();
+            double p2y = P2.getPx();
+           
+            return (p1x - pNx) * (p2y - pNy) - (p2x - pNx) * (p1y - pNy);
+        }
         
+        public boolean PointDansTriangle (Point P1, Point P2, Point P3) {
+            double d1, d2, d3;
+            boolean neg, pos;
+            
+            d1 = this.signe(P1,P2);
+            d2 = this.signe(P2,P3);
+            d3 = this.signe(P3,P1);
+            
+            neg = (d1<0) || (d2<0) || (d3<0);
+            pos = (d1>0) || (d2>0) || (d3>0);
+            
+            return !(neg && pos);
+                       
+        }
+
 
     public String toString() {
         return "{Point ; abs : " + this.px + " ; ord : " + this.py + "}" ;

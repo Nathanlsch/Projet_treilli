@@ -12,12 +12,13 @@ package fr.insa.cours.projet_treilli.figure;
 public class main extends Point {
     
     public static void main(String[] args) {
-      Point point1 = new Point(-1,1);
-      Point point2 = new Point(-10,2);
-      Point Noeud = new Point (5,-10);
+      Point point1 = new Point(-2,1);
+      Point point2 = new Point(2,1);
+      Point point3 = new Point(0,-2);
+      Point Noeud = new Point (0,0);
       
-      System.out.println("Angle:");
-      System.out.println(Noeud.getAngle(point1, point2));
+      System.out.println("Dans triangle:");
+      System.out.println(Noeud.PointDansTriangle(point1,point2,point3));
         
     }
     
